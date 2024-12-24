@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS - 01</title>
+</head>
+<style>
+    .heading1 {
+        text-align: center;
+        color: blue
+    }
+
+    .chat-notification {
+        display: flex;
+        align-items: center;
+        max-width: 24rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background-color: #FFF;
+        box-shadow: 0 40px 25px 10px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        ;
+    }
+
+    .chat-notification-logo-wrapper {
+        flex-shrink: 0;
+    }
+
+    .chat-notification-logo {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .chat-notification-content {
+        margin-left: 1.5rem;
+    }
+
+    .chat-notification-title {
+        color: #1a202c;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+
+    .chat-notification-message {
+        color: #718096;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+</style>
+
+
+<body>
+    <h1 class="heading1">TRADITIONAL APPROACH</h1>
+    <div class="chat-notification">
+        <div class="chat-notification-logo-wrapper">
+            <img src="/images/warning.svg" alt="Logo" class="chat-notification-logo">
+        </div>
+
+        <div class="chat-notification-content">
+            <h4 class="chat-notification-title">Gad Chat</h4>
+            <p class="chat-notification-message">Welcome to my new chat application</p>
+        </div>
+    </div>
+</body>
+
+</html>
